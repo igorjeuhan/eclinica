@@ -1,0 +1,118 @@
+.menu {
+    height: 60px;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-purple);
+    top: 0;
+    left: 0;
+}
+
+.menu h1 {
+    font-size: 2.4rem;
+    color: var(--color-white);
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2.4rem;
+}
+
+.form-add {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    padding: 2.4rem;
+    width: 60rem;
+}
+
+label,
+input,
+select,
+button {
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+label {
+    color: var(--color-dark-purple);
+    font-weight: 700;
+}
+
+input,
+select {
+    padding: 1rem;
+    border: 1px solid var(--color-purple);
+    border-radius: 0.5rem;
+}
+
+button {
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background: var(--color-purple);
+    transition: background 0.08s ease-in;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+button:hover {
+    background: var(--color-dark-purple);
+}
+
+.clientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2.4rem;
+}
+
+.search {
+    width: 60%;
+}
+
+table {
+    text-align: left;
+    padding: 2rem;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.04);
+    width: 80rem;
+}
+
+th,
+td {
+    font-size: 1.4rem;
+    padding: 1.4rem;
+    color: var(--color-dark-purple);
+}
+
+td {
+    border-bottom: 1px solid var(--color-light-purple);
+}
+
+.img-perfil {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.excluir {
+    width: 6rem;
+    padding: 0.5rem;
+    background: var(--color-red);
+    color: var(--color-white);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-transform: none;
+}
+
+.excluir:hover {
+    background: var(--color-dark-red);
+}

@@ -1,0 +1,9 @@
+Site principal: E-clinica, sua clínica de atendimento especializado em qualquer lugar.
+Admin: página de cadastro com lista de pacientes.
+
+Id
+Foto
+Nome
+Idade
+Nível de atendimento: Verde, Azul, Amarelo, Laranja, Vermelho
+timestamps

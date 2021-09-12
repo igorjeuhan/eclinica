@@ -7,3 +7,6 @@ Nome
 Idade
 Nível de atendimento: Verde, Azul, Amarelo, Laranja, Vermelho
 timestamps
+
+eclinicauser
+eclinicapass

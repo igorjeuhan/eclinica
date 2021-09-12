@@ -35,27 +35,18 @@
 @section('clientes-content')
 <h1>Clientes</h1>
     <div class="clientes-cards">
-        <div class="card">
-            <img src="images/perfil/igor.jpg" alt="Imagem de perfil do cliente.">
-            <h2>Igor Jeuhan</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem dicta minus ea sit
-                consequuntur illo nihil.
-            </p>
-        </div>
-        <div class="card">
-            <img src="images/perfil/igor.jpg" alt="Imagem de perfil do cliente.">
-            <h2>Igor Jeuhan</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem dicta minus ea sit
-                consequuntur illo nihil.
-            </p>
-        </div>
-        <div class="card">
-            <img src="images/perfil/igor.jpg" alt="Imagem de perfil do cliente.">
-            <h2>Igor Jeuhan</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem dicta minus ea sit
-                consequuntur illo nihil.
-            </p>
-        </div>
+        @forelse ($customers as $customer)
+            <div class="card">
+                <img src="images/perfil/igor.jpg" alt="Imagem de perfil do cliente.">
+                <h2>{{$customer->nome}}</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem dicta minus ea sit
+                    consequuntur illo nihil.
+                </p>
+            </div>
+        @empty
+            <p>Não há clientes cadastrados.</p>
+        @endforelse
+
     </div>
 @endsection
 
